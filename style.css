@@ -70,3 +70,19 @@ body {
     width: 300px;
     margin: 20px 0;
 }
+
+@media (max-width: 768px) {
+    .nav {
+        justify-content: center; /* Центрируем иконки */
+        padding-right: 15px; /* Добавляем отступ справа */
+    }
+
+    .nav-link img {
+        margin-right: 10px; /* Добавляем отступ между иконками */
+    }
+
+    .nav-item {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
