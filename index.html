@@ -1,59 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capybara Mem Token</title>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="favicon.svg">
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
-    <nav class="navbar navbar-dark bg-dark">
-        <div class="container d-flex justify-content-between align-items-center">
-            <a href="index.html" class="navbar-brand" data-aos="fade-right" data-aos-duration="800">
-                <img width="90px" src="img/logo.png" alt="Capybara Logo" onerror="this.onerror=null;alert('Logo image not found: img/logo.png');">
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <img src="img/logo.png" alt="Логотип Капибары" onerror="this.onerror=null;this.src='img/default-logo.png';">
             </a>
-            <ul class="nav d-flex align-items-center" data-aos="fade-left" data-aos-duration="800">
+            <ul class="nav">
                 <li class="nav-item">
                     <a class="nav-link" href="https://t.me/">
-                        <img width="75px" src="img/tg.png" alt="Telegram Icon" aria-label="Telegram" onerror="this.onerror=null;alert('Telegram icon not found: img/tg.png');">
+                        <img src="img/tg.png" alt="Иконка Telegram" onerror="this.onerror=null;this.src='img/default-tg.png';">
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="https://x.com/">
-                        <img width="90px" src="img/x.png" alt="X Icon" aria-label="X" onerror="this.onerror=null;alert('X icon not found: img/x.png');">
+                        <img src="img/x.png" alt="Иконка X" onerror="this.onerror=null;this.src='img/default-x.png';">
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="https://sunswap.com">
-                        <img width="90px" src="img/sunswap.png" alt="Sunswap Icon" aria-label="Sunswap" onerror="this.onerror=null;alert('Sunswap icon not found: img/sunswap.jpg');">
+                        <img src="img/sunswap.png" alt="Иконка Sunswap" onerror="this.onerror=null;this.src='img/default-sunswap.png';">
                     </a>
                 </li>
             </ul>
         </div>
     </nav>
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active ">
-            
-          </div>
-        </div>
-      </div>
-    <div class="container">
-        <div class="row text-center">
-        <div class="col justify-content-center text-center">
-            <img class="logobig"  src="img/Logo_big.png" alt="logo">
-        </div>
-        </div>
-      </div>
 
-    <!-- Include AOS library and initialization -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+    <!-- Карусель -->
+    <div id="carouselExampleSlidesOnly" class="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/slide1.jpg" alt="Слайд 1">
+            </div>
+            <div class="carousel-item">
+                <img src="img/slide2.jpg" alt="Слайд 2">
+            </div>
+            <div class="carousel-item">
+                <img src="img/slide3.jpg" alt="Слайд 3">
+            </div>
+        </div>
+    </div>
+
+    <!-- Основной контент -->
+    <div class="container">
+        <img class="logobig" src="img/Logo_big.png" alt="Большой логотип Капибары" onerror="this.onerror=null;this.src='img/default-logo-big.png';">
+    </div>
+
+    <!-- Подключение внешнего JavaScript файла -->
+    <script src="script.js"></script>
 </body>
 </html>
+
