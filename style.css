@@ -38,6 +38,7 @@ body {
 
 .nav-link img {
     width: 75px;
+    padding-right: 10px;
 }
 
 /* Стили для карусели */
