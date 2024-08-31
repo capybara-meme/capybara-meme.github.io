@@ -1,12 +1,73 @@
-html {
-  overflow-x: hidden; }
+/* Сброс базовых стилей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
-    background-color: #2377d7;
-    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.navbar {
+    background-color: #343a40;
+    padding: 10px;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand img {
+    width: 90px;
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 15px;
+}
+
+.nav-link img {
+    width: 75px;
+}
+
+/* Стили для карусели */
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+}
+
+.carousel img {
+    width: 100%;
+    display: block;
+}
+
+/* Основной контент */
+.container {
+    padding: 20px;
+    text-align: center;
 }
 
 .logobig {
-    margin-top: 100px;
+    width: 300px;
+    margin: 20px 0;
 }
-
